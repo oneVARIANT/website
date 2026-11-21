@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import type { TabId } from './data/navigation';
@@ -43,6 +44,7 @@ export function App() {
       </main>
 
       <Footer onSelectTab={handleSelectTab} />
+      <Analytics />
     </div>
   );
 }
